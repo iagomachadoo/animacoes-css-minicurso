@@ -1,0 +1,36 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+}
+
+.box{
+    outline: 5px solid red;
+    padding: 40px;
+}
+
+.box img{
+    /* transform: translateX(100px); */
+    /* transform: translateY(50px); */
+    /* transform: translate(100px, 50px); */
+
+    /* transform: scaleX(2); */
+    /* transform: scaleY(1.5); */
+    /* transform: scale(1.5); */
+
+    /* transform: rotate(90deg); */
+    /* transform: rotate(-0.25turn); */
+
+    /* transform: skewX(20deg); */
+    /* transform: skewY(50deg); */
+    /* transform: skew(20deg, 50deg); */
+    /* transform: skew(20deg); */
+
+    transform: translateX(100px) scale(2) rotate(90deg);
+}

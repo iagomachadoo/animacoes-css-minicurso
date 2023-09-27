@@ -1,0 +1,43 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+img:first-child{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+img:nth-child(2){
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    width: 10%;
+    top: 40%;
+
+    /* animation-name: fly;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-play-state: running; */
+
+    animation: fly 1.5s linear 4 alternate;
+}
+
+@keyframes fly {
+    100%{
+        transform: translateX(calc(100vw - 137px));
+    }
+}
